@@ -1,6 +1,7 @@
 import React from 'react';
 import editIcon from '../img/edit-icon.png';
 import deleteIcon from '../img/delete-icon.png';
+// importando imagem como uma variável para ser utilizada
 
 function ItemMusica(props) {
     return (
@@ -13,19 +14,21 @@ function ItemMusica(props) {
                 <div className="info-music">
                     <p>
                         <strong className="card-title">música: </strong>
-                        <input className="input-music-enable" type="text" defaultValue={props.desc1}/>
+                        {/* componente com classe "card-title", utilizando className do React pois class é reservada do sistema */}
+                        <input className="input-music-enable" type="text" defaultValue={props.title}/>
+                        {/* input precisa utilizar o defaultValue caso queira digitar, senão o elemento será somente para LEITURA */}
                     </p>
                     <p>
                         <strong className="card-title">artista: </strong>
-                        <input className="input-music-enable" type="text" defaultValue={props.desc2}/>
+                        <input className="input-music-enable" type="text" defaultValue={props.artist}/>
                     </p>
                     <p>
                         <strong className="card-title">categoria: </strong>
-                        <input className="input-music-enable" type="text" defaultValue={props.desc3}/>
+                        <input className="input-music-enable" type="text" defaultValue={props.genre}/>
                     </p>
                     <p>
                         <strong className="card-title">ano: </strong>
-                        <input className="input-music-enable" type="text" defaultValue={props.desc4}/>
+                        <input className="input-music-enable" type="text" defaultValue={props.year}/>
                     </p>
                     <button className="btn-salvar-enable">Salvar</button>
                 </div>
