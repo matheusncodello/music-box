@@ -159,6 +159,7 @@ nav {
     margin-bottom: 30px;
     flex-wrap: wrap;
     align-content: space-between;
+    border-radius: 10px;
 }
 
 .info-music {
@@ -168,6 +169,7 @@ nav {
     align-self: flex-end;
     flex-wrap: wrap;
     padding: 15px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .icons {
@@ -302,7 +304,7 @@ form label {
 
 .add-music h1 {
     margin: 50px 0;
-    font-family: Roboto Mono;
+    font-family: var(--font-defaut);
     font-style: normal;
     font-weight: bold;
     font-size: 64px;

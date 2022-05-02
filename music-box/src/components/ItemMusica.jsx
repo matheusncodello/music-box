@@ -1,12 +1,17 @@
 import React from 'react';
 import editIcon from '../img/edit-icon.png';
 import deleteIcon from '../img/delete-icon.png';
+import background from '../img/capa.png';
 // importando imagem como uma variável para ser utilizada
 
 function ItemMusica(props) {
+    const backgroundImage = {
+        backgroundImage: `url(${props.image ? props.image : background})`
+    }
+
     return (
         <>
-            <div className="card-music">
+            <div className="card-music" style={backgroundImage}>/
                 <div className="icons">
                     <img src={editIcon} alt="" />
                     <img src={deleteIcon} alt="" />

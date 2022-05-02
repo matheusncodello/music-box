@@ -1,12 +1,12 @@
 import React from 'react';
-import Musicas from './pages/Musicas';
+import Rotas from './routes';
 import './css/style.css';
 import './css/reset.css';
 
 function App() {
     return (
         <>
-            <Musicas />
+            <Rotas />
         </>
     )
 }
